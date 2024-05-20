@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                text-align: center;
+                margin: 50px;
+            }
+
+            h3 {
+                color: #333;
+            }
+
+            label {
+                display: inline-block;
+                margin-bottom: 5px;
+            }
+
+            input {
+                padding: 5px;
+                margin-bottom: 10px;
+            }
+
+            button {
+                padding: 10px;
+                background-color: #4caf50;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #45a049;
+            }
+
+            p {
+                margin-top: 20px;
+                font-weight: bold;
+                color: #333;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Temperature Converter</h3>
+        <label>Enter value</label>
+        <input type="text" name="input" id="input"><br><br>
+        <input type="radio" id="celcius" name="unit">
+        <label for="celcius">Celcius</label><br>
+        <input type="radio" id="fahrenheit" name="unit">
+        <label for="fahrenheit">Fahrenheit</label><br>
+        <button type="submit" id="submit">submit</button>
+        <p><b id="display"></b></p>
+        <script src="../js/tempConverter.js"></script>
+    </body>
+</html>
